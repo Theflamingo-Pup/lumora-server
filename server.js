@@ -96,6 +96,7 @@ app.use('/api', apiLimiter);
 app.use('/api/health',   require('./routes/health'));
 app.use('/api/waitlist', require('./routes/waitlist'));
 app.use('/api/auth',     require('./routes/auth'));
+app.use('/api/admin',    require('./routes/admin'));
 
 // Root pings (handy for sanity checks in a browser)
 app.get('/', (_req, res) => {
